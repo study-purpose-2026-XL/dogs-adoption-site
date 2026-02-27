@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 30px 10%;
+background-image: url("images/icons-pattern.webp");
+}
+
+
+
+.hero {
+  background-image: url("images/dog-gangs-heroshot.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 60vh; /* takes up 60% of the screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color:  rgb(250, 245, 245);
+  line-height: 100px;
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/icons-pattern.webp");
+  background-size: auto;        
+  background-position: top left; 
+  background-repeat: repeat;  
+  background-attachment: fixed;
+  font-family: "SN Pro", sans-serif;  
+}
+
+.flex-container {
+  display: flex;
+  gap: 0; /* spacing between columns */
+  padding: 20px;
+}
+
+.column {
+  flex: 1; /* equal width */
+  padding: 1rem;
+  column-count: 3;
+  column-gap: 2rem;
+  column-rule: solid 1px #770505;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px dotted #770505;
+}
+
+/* Remove left border from the first column */
+.column:first-child {
+  border-left: none;
+}
+
+
+.column h2 {
+  color: rgb(85, 84, 84)
+}
+
+.column p {
+  color: rgb(117, 116, 116); 
+  margin-bottom: auto;
+}
+
+
+.thumb {
+  width: 140px;          
+  height: auto;
+  border-radius: 8px;    
+  margin: 0.5rem 1rem 0.5rem 0; /* default margin for left float */
+}
+
+.thumb.left {
+  float: left;
+}
+
+.thumb.right {
+  float: right;
+  margin: 0.5rem 0 0.5rem 1rem; 
+}
+
+
+
+
+
+/*navigation bar styling*/
+
+.logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+  width: 150px; 
+}
+
+
+li, a, button {
+font-family: "SN Pro", sans-serif;
+font-weight:500;
+font-size: 16px;
+color: rgb(241, 238, 238);
+text-decoration: none;
+}
+
+nav {
+  order: 1;
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li {
+  display:inline-block;
+  padding: 0px 20px
+}
+
+.nav-links li:nth-child(1) {
+  padding: 0px 20px 0 0;
+}
+
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: rgb(252, 248, 248);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-links li a:hover {
+  color: darkred;
+}
+
+.cta { 
+  order: 2;
+  display: inline-block;
+  padding: 9px 25px;
+  background-color: rgba(0, 136,169,1);
+  border-radius: 50px;
+  color: rgb(104, 17, 17);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136,169,0.8);
+}
+
+
+
+
+
+
+
+
+
